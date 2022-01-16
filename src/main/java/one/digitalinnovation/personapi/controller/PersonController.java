@@ -35,10 +35,8 @@ public class PersonController {
     }
 
     @GetMapping
-    //public List<PersonDTO> listAll() {
-    public String listAll() {
-        return "API Test!";
-        //return personService.listAll();
+    public List<PersonDTO> listAll() {
+        return personService.listAll();
     }
 
     @GetMapping("/{id}")
